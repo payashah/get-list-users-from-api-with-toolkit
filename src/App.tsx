@@ -34,13 +34,15 @@ function App() {
 
 
   return (
-    <div className="App">
-      <h2>لیست ماربران: </h2>
-      <ul>
-        {users.map(user => (
-          <li key={user.id}>{user.name} - {user.email}</li>
-        ))}
-      </ul>
+    <div className="app-main">
+      <div className='app'>
+        <h1 className='title'>Users List: </h1>
+        <ul className='ul'>
+          {users.map(user => (
+            <li className='li' key={user.id}>{user.name} - {user.email}</li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
